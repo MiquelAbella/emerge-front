@@ -5,10 +5,19 @@
 
 </div>
 <div class="h-screen w-screen flex items-end justify-center">
-    <p class="text-white/90 text-[4vw] lg:text-[3vw] absolute top-80 left-5 lg:top-40 lg:left-40 m-auto">Descubre, conecta
-        y apoya la música emergente</p>
-    <p class="text-white/90 text-[3.5vw] lg:text-[1.5vw] absolute top-90 left-5 lg:top-60 lg:left-40 m-auto">Únete a la
-        plataforma que da voz a las bandas y artistas emergentes</p>
+    <div class="absolute top-80 lg:top-40 lg:left-40 m-auto px-2 text-center lg:text-start">
+
+        <p class="text-white/90 text-[4vw] lg:text-[3vw]">Descubre,
+            conecta
+            y apoya la música emergente</p>
+        <p class="text-white/90 text-[3.5vw] lg:text-[1.5vw] mt-2
+        ">Únete a
+            la
+            plataforma que da voz a las bandas y artistas emergentes</p>
+        <div class="mt-4 w-full flex item-center justify-center lg:justify-start">
+            <sereni-button>Empieza a descubrir!</sereni-button>
+        </div>
+    </div>
 
     <p class="text-white/90 mb-4 text-2xl cursor-pointer">{{currentBand.name}} - {{currentBand.city}}</p>
 </div>
