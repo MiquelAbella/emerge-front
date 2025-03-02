@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+html {
+    font-family: "Inconsolata", serif;
+}
+
+@theme {
+    --color-primary: oklch(25.2% 0 0);
+}
