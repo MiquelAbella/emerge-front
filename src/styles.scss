@@ -4,6 +4,10 @@ html {
     font-family: "Inconsolata", serif;
 }
 
+body {
+    background-color: #030014;
+}
+
 @theme {
     --color-primary: oklch(25.2% 0 0);
 }

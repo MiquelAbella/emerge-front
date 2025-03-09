@@ -1,2 +1,2 @@
-export * from './aside/aside.component'
+export * from './nav/nav.component'
 export * from './logo/logo.component'

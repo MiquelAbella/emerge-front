@@ -1,12 +1,10 @@
 <div class="video-background">
-    <video autoplay muted loop class="brightness-30">
+    <video #backgroundVideo autoplay muted loop class="brightness-70">
         <source src="assets/videobg.mp4" type="video/mp4">
     </video>
-
 </div>
 <div class="h-screen w-screen flex items-end justify-center">
     <div class="absolute top-80 lg:top-40 lg:left-40 m-auto px-2 text-center lg:text-start">
-
         <p class="text-white/90 text-[4vw] lg:text-[3vw]">Descubre,
             conecta
             y apoya la música emergente</p>
@@ -18,6 +16,5 @@
             <sereni-button>Empieza a descubrir!</sereni-button>
         </div>
     </div>
-
     <p class="text-white/90 mb-4 text-2xl cursor-pointer">{{currentBand.name}} - {{currentBand.city}}</p>
 </div>

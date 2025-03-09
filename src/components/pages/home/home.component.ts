@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
 import { interval, Subscription, timer } from 'rxjs';
 
 @Component({
@@ -6,9 +6,9 @@ import { interval, Subscription, timer } from 'rxjs';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-
 })
 export class HomeComponent {
+  @ViewChild('backgroundVideo') video!: ElementRef<HTMLVideoElement>;
   bands = [
     { name: "Vortex", city: "Bilbao" },
     { name: "Neón Blanco", city: "Sevilla" },
@@ -41,6 +41,12 @@ export class HomeComponent {
     this.subscription = bandChangeInterval.subscribe(() => {
       this.currentIndex = Math.floor(Math.random() * this.bands.length - 1);
       this.currentBand = this.bands[this.currentIndex];
+    });
+  }
+
+  ngAfterViewInit() {
+    this.video.nativeElement.play().catch(error => {
+      console.warn('Autoplay prevented:', error);
     });
   }
 
