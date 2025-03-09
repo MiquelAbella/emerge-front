@@ -34,7 +34,10 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/leaflet/dist/leaflet.css",
+              "node_modules/leaflet.markercluster/dist/MarkerCluster.css",
+              "node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css"
             ],
             "scripts": []
           },
@@ -96,7 +99,10 @@
             ],
             "styles": [
               "node_modules/font-awesome/css/font-awesome.min.css",
-              "src/styles.scss"
+              "node_modules/leaflet/dist/leaflet.css",
+              "src/styles.scss",
+              "node_modules/leaflet.markercluster/dist/MarkerCluster.css",
+              "node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css"
             ],
             "scripts": []
           }
