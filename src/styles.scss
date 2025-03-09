@@ -11,3 +11,7 @@ body {
 @theme {
     --color-primary: oklch(25.2% 0 0);
 }
+
+.leaflet-control-attribution {
+    display: none !important;
+}
